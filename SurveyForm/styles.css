@@ -1,0 +1,53 @@
+body {
+    margin: 0; /* 移除默认的边距 */
+    padding: 0; /* 移除默认的内填充 */
+    width: 100%; /* 设置宽度确保body填满整个视口宽度 */
+    display: flex; /* 使用flex布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    min-height: 100vh; /* 最小高度为视口高度，确保至少充满整个屏幕 */
+    background-image: url('https://media.sproutsocial.com/uploads/2022/06/profile-picture.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    color: white;
+    text-align: center;
+}
+
+p, h1 {
+    color: white;
+}
+
+form {
+    background-color: rgba(173, 216, 230, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    color: white;
+    margin-top: 20px;
+    display:flex;    
+    flex-direction: column;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-bottom: 10px;
+}
+
+input, select, textarea {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    margin-top: 10px;
+
+}

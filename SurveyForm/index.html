@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to help us improve the platform</p>
+        </div>
+
+        <form id="survey-form">
+            <div class="name">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="email">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+            </div>
+            <div class="age">
+                <label for="number" id="number-label">Age:</label>
+                <input type="number" id="number" name="age" min="1" max="100" placeholder="Age" required>
+            </div>
+            <div class="dropdown">
+                <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
+                <select name="role" id="dropdown" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                    <option value="prefer">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div id="radio">
+                <p id="radio-word">Would you recommend freeCodeCamp to a friend?</p>
+                <label for="radio1">
+                    <input type="radio" name="user-recommend" value="definitely" id="radio1" required>Definitely
+                </label>
+                <label for="radio2">
+                    <input type="radio" name="user-recommend" value="maybe" id="radio2" required>Maybe
+                </label>
+                <label for="radio3">
+                    <input type="radio" name="user-recommend" value="not-sure" id="radio3" required>Not sure
+                </label>                
+            </div>
+            <div id="checkbox">
+                <p id="checkbox-word">What is your favorite feature of freeCodeCamp?</p>
+                <label for="checkbox1">
+                    <input type="checkbox" name="like" value="challenges" id="checkbox1">Challenges
+                </label>
+                <label for="checkbox2">
+                    <input type="checkbox" name="like" value="projects" id="checkbox2">Projects
+                </label>
+                <label for="checkbox3">
+                    <input type="checkbox" name="like" value="community" id="checkbox3">Community
+                </label>
+                <label for="checkbox4">
+                    <input type="checkbox" name="like" value="open-source" id="checkbox4">Open Source
+                </label>
+                <label for="checkbox5">
+                    <input type="checkbox" name="like" value="gitter" id="checkbox5">Gitter
+                </label>
+            </div>
+            <div id="comment">
+                <label for="comment">Any comments or suggestions?</label>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here"></textarea>
+            </div>
+            
+            <input type="submit" id="submit">
+            
+        </form>
+    </div>
+
+</body>
+</html>
