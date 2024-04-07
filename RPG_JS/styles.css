@@ -20,7 +20,8 @@ body {
     padding: 10px;
 }
 
-#controls, #stats {
+#controls,
+#stats {
     border: 1px solid #0a0a23;
     color: #0a0a23;
     padding: 5px;
@@ -43,6 +44,5 @@ button {
     color: #0a0a23;
     background-color: #feac32;
     border: 3px solid #feac32;
-    background-image:linear-gradient(#fecc4c, #ffac33) ;
+    background-image: linear-gradient(#fecc4c, #ffac33);
 }
-
